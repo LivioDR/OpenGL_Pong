@@ -1,0 +1,24 @@
+Este proyecto está configurado para utilizar OpenGL con GLUT. 
+En la configuración 
+para Windows se utiliza FreeGLUT y se enlaza estáticamente 
+(no requiere ningún 
+dll). Para realizar un enlace dinámico hay que cambiar el 
+nombre de la librería 
+a enlazar freeglut_static por freeglut y quitar el 
+parámetro extra para la 
+compilación "-DFREEGLUT_STATIC" (limpiar antes de 
+volver a compilar). Si se quiere 
+utilizar glut en lugar de freeglut, reemplazar 
+el nombre de la librería por glut32. 
+Los archivos de estas librerías (cabeceras, 
+objetos, y dlls) se encuentran en la 
+carpeta OpenGL dentro de MinGW. Si va a 
+utilizar enlazado dinámico recuerde copiar
+los dlls al directorio de su programa o 
+a windows\system32. Todas estas opciones
+del proyecto se configuran desde el 
+"Opciones" en el menú ejecución. Además, en el
+la pestaña "Asistencias" del 
+cuadro de Preferencias (menu Archivo) puede activar el 
+autocompletado de 
+funciones y constantes para OpenGL y GLUT.
